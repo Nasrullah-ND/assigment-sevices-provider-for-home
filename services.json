@@ -1,0 +1,23 @@
+{
+    "services": [
+      {
+        "id": 1,
+        "name": "Plumbing",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget enim a nisi commodo ultrices."
+      },
+      {
+        "id": 2,
+        "name": "Electrician",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget enim a nisi commodo ultrices."
+      },
+      {
+        "id": 3,
+        "name": "Carpentry",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget enim a nisi commodo ultrices."
+      }
+    ]
+  }
+ 
+
+  
+  

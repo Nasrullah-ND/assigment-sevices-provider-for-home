@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-J9ojHAdA6BUW+uVAV65p8C7oUjldzDetHHLeql5zW50GJVkEeLD1gs2pA3Zk8UvzH5cAdGgjp+2tTTrJxwFfgQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header id="mainHeader">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/img/IMG_Khadim_Logo-removebg-preview.png" alt="" style="width: 30%; height: 20%;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="OurServices.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="satisfaction.html">Our Satisfaction</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Order.html">Order</a></li>
+            <li class="nav-item"><a class="nav-link" href="FAQS.html">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+<!-- Order Form Section -->
+<section id="order" class="py-5" style="margin-top: 8%; background-image: url(assets/img/background1w3.avif);">
+  <div class="container">
+    <h2 class="text-center mb-4" style="color: bisque;">Place Your Order</h2>
+    <form id="orderForm">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputName" style="color: aliceblue;">Name (Min 3, Max 20 characters)</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Enter your name" minlength="3" maxlength="20" required>
+          <div class="invalid-feedback"style="color: aliceblue;">Please enter your name.</div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail"style="color: aliceblue;">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required>
+          <div class="invalid-feedback"style="color: aliceblue;">Please enter a valid email address.</div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputPhone"style="color: aliceblue;">Phone Number (Exactly 11 digits)</label>
+          <input type="tel" class="form-control" id="inputPhone" placeholder="Enter your phone number" minlength="11" maxlength="11" required>
+          <div class="invalid-feedback"style="color: aliceblue;">Please enter a valid phone number (exactly 11 digits).</div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputAddress"style="color: aliceblue;">Address (Max 100 characters)</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Enter your address" maxlength="100" required>
+          <div class="invalid-feedback"style="color: aliceblue;">Please enter your address.</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputService"style="color: aliceblue;">Select Service</label>
+        <select id="inputService" class="form-control" required>
+          <option selected disabled value="">Choose...</option>
+          <option>Plumbing</option>
+          <option>Electrician</option>
+          <option>Carpentry</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="inputComment"style="color: aliceblue;">Comment</label>
+        <textarea class="form-control" id="inputComment" rows="3" placeholder="Enter any additional comments"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="inputCnic"style="color: aliceblue;">CNIC No (Exactly 13 digits)</label>
+        <input type="text" class="form-control" id="inputCnic" placeholder="Enter your CNIC number" minlength="13" maxlength="13" required>
+        <div class="invalid-feedback"style="color: aliceblue;">Please enter a valid CNIC number (exactly 13 digits).</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit Order</button>
+    </form>
+  </div>
+</section>
+
+ <!-- footer -->
+<footer class="footer">
+  <div class="container">
+      <div id="footerContent" class="row">
+          <!-- Copyright Information -->
+          <div class="col-md-6">
+              <p>&copy; 2024 Khadim. All rights reserved.</p>
+          </div>
+          <!-- Social Media Icons -->
+          <div class="col-md-6 text-right">
+              <!-- Facebook Logo -->
+              <a href="https://www.facebook.com/khadim" target="_blank"><img src="assets/img/facebook_logo-removebg-preview.png" alt="Facebook" style="width: 30px; height: 30px;"></a>
+              <!-- Twitter Logo -->
+              <a href="https://twitter.com/khadim" target="_blank"><img src="assets/img/twitter_logo-removebg-preview.png" alt="Twitter" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+              <!-- Instagram Logo -->
+              <a href="https://www.instagram.com/khadim" target="_blank"><img src="assets/img/instagram_logo-removebg-preview.png" alt="Instagram" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- Footer End -->
+<!-- Bootstrap JS and jQuery -->
+<script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Function to handle form submission
+    document.getElementById("orderForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Fetch form data
+      let name = document.getElementById("inputName").value.trim();
+      let email = document.getElementById("inputEmail").value.trim();
+      let phone = document.getElementById("inputPhone").value.trim();
+      let address = document.getElementById("inputAddress").value.trim();
+      let service = document.getElementById("inputService").value;
+      let comment = document.getElementById("inputComment").value.trim();
+      let cnic = document.getElementById("inputCnic").value.trim();
+
+      // Validate form fields
+      if (!name || !email || !isValidEmail(email) || !phone || !address || !service || !cnic) {
+        // Show validation error messages
+        document.getElementById("inputName").classList.add("is-invalid");
+        document.getElementById("inputEmail").classList.add("is-invalid");
+        document.getElementById("inputPhone").classList.add("is-invalid");
+        document.getElementById("inputAddress").classList.add("is-invalid");
+        document.getElementById("inputService").classList.add("is-invalid");
+        document.getElementById("inputCnic").classList.add("is-invalid");
+        return;
+      }
+
+      // Reset validation state
+      document.getElementById("inputName").classList.remove("is-invalid");
+      document.getElementById("inputEmail").classList.remove("is-invalid");
+      document.getElementById("inputPhone").classList.remove("is-invalid");
+      document.getElementById("inputAddress").classList.remove("is-invalid");
+      document.getElementById("inputService").classList.remove("is-invalid");
+      document.getElementById("inputCnic").classList.remove("is-invalid");
+
+      // Continue with form submission
+
+      // Fetch form data
+      let formData = {
+        name: name,
+        email: email,
+        phone: phone,
+        address: address,
+        service: service,
+        comment: comment,
+        cnic: cnic
+      };
+
+      // Get existing orders from local storage
+      let orders = JSON.parse(localStorage.getItem("orders")) || [];
+
+      // Add new order to the array
+      orders.push(formData);
+
+      // Store updated orders in local storage
+      localStorage.setItem("orders", JSON.stringify(orders));
+
+      // Display success message
+      alert("Your order has been submitted successfully!");
+
+      // Reset the form after submission
+      document.getElementById("orderForm").reset();
+    });
+
+    // Function to validate email
+    function isValidEmail(email) {
+      // Simple email validation regex
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+  </script>
+</body>
+</html>

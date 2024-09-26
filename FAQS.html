@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-J9ojHAdA6BUW+uVAV65p8C7oUjldzDetHHLeql5zW50GJVkEeLD1gs2pA3Zk8UvzH5cAdGgjp+2tTTrJxwFfgQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+    <style>
+        /* Styling for FAQ section */
+        body{
+            background-image: url(/assets/img/background1w3.avif);
+        }
+        #faqs {
+            background-color: #f8f9fa; /* Background color */
+            padding: 50px 0; /* Add padding for spacing */
+        }
+        h2 {
+            color: #333; /* Text color for h2 */
+            text-align: center; /* Center align h2 */
+            margin-bottom: 30px; /* Add margin below h2 */
+        }
+    
+        .faq-item-container {
+            background-color: #fff; /* FAQ item background color */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Add padding for spacing */
+            margin-bottom: 20px; /* Add margin between FAQ items */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            transition: transform 0.3s ease; /* Smooth transition for transform */
+        }
+    
+        .faq-item-container:hover {
+            transform: translateY(-5px); /* Move item up on hover */
+        }
+    
+        .faq-question {
+            font-weight: bold; /* Make question text bold */
+            margin-bottom: 10px; /* Add margin below question */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+    
+        .faq-answer {
+            display: none; /* Hide answer by default */
+            transition: max-height 0.5s ease; /* Smooth transition for max-height */
+        }
+    
+        .faq-answer.active {
+            display: block; /* Show answer when active */
+            margin-top: 10px; /* Add margin above answer */
+        }
+    </style>
+    
+    
+<body>
+    <header id="mainHeader">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/img/IMG_Khadim_Logo-removebg-preview.png" alt="" style="width: 30%; height: 20%;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="OurServices.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="satisfaction.html">Our Satisfaction</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="Order.html">Order</a></li>
+                <li class="nav-item"><a class="nav-link active" href="FAQS.html">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- faqs -->
+      <main style="margin-top: 6%;">
+        <section id="faqs" class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div id="faq-list"></div>
+        </section>
+    </main>
+    
+   <!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div id="footerContent" class="row">
+            <!-- Copyright Information -->
+            <div class="col-md-6">
+                <p>&copy; 2024 Khadim. All rights reserved.</p>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="col-md-6 text-right">
+                <!-- Facebook Logo -->
+                <a href="https://www.facebook.com/khadim" target="_blank"><img src="assets/img/facebook_logo-removebg-preview.png" alt="Facebook" style="width: 30px; height: 30px;"></a>
+                <!-- Twitter Logo -->
+                <a href="https://twitter.com/khadim" target="_blank"><img src="assets/img/twitter_logo-removebg-preview.png" alt="Twitter" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+                <!-- Instagram Logo -->
+                <a href="https://www.instagram.com/khadim" target="_blank"><img src="assets/img/instagram_logo-removebg-preview.png" alt="Instagram" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+    <!-- Bootstrap JS and dependencies -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="application/json" id="faq-data">
+        {
+            "faqs": [
+                {
+                    "question": "How do I place an order?",
+                    "answer": "You can place an order by visiting our website and filling out the order form."
+                },
+                {
+                    "question": "What payment methods do you accept?",
+                    "answer": "We accept credit/debit cards, PayPal, and cash on delivery."
+                },
+                {
+                    "question": "Do you offer refunds?",
+                    "answer": "Yes, we offer refunds within 30 days of service completion, subject to our refund policy."
+                },
+                {
+                    "question": "How long does it take to process an order?",
+                    "answer": "Order processing time depends on the type of service. We aim to process orders as quickly as possible."
+                },
+                {
+                    "question": "Can I track the status of my order?",
+                    "answer": "Yes, you can track the status of your order by logging into your account on our website."
+                },
+                {
+                    "question": "Do you offer discounts for bulk orders?",
+                    "answer": "Yes, we offer discounts for bulk orders. Please contact our customer support for more information."
+                }
+            ]
+        }
+        
+    </script>
+    <script>
+        // Get FAQ data
+        const faqData = JSON.parse(document.getElementById('faq-data').textContent).faqs;
+
+        // Populate FAQs Section
+        const faqList = document.getElementById('faq-list');
+        faqData.forEach(faq => {
+            const faqItem = document.createElement('div');
+            faqItem.classList.add('faq-item-container');
+            faqItem.innerHTML = `
+                <h3 class="faq-question">${faq.question}</h3>
+                <p class="faq-answer">${faq.answer}</p>
+            `;
+            faqItem.addEventListener('click', () => {
+                faqItem.querySelector('.faq-answer').classList.toggle('active');
+            });
+            faqList.appendChild(faqItem);
+        });
+    </script>
+</body>
+</html>

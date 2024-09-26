@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Khadim</title>
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-J9ojHAdA6BUW+uVAV65p8C7oUjldzDetHHLeql5zW50GJVkEeLD1gs2pA3Zk8UvzH5cAdGgjp+2tTTrJxwFfgQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+
+    <style>
+        /* Animation for About Us section */
+        #about-content {
+            opacity: 0; /* Initially hidden */
+            transform: translateY(50px); /* Move down */
+            transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+        }
+
+        /* Fade-in animation for paragraphs */
+        #about-content p {
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.5s ease; /* Smooth transition */
+        }
+
+        /* Animation for section titles */
+        #about-content h2, #about-content h3 {
+            opacity: 0; /* Initially hidden */
+            transform: translateY(50px); /* Move down */
+            transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+        }
+
+        /* Hover effect for team members */
+        #team-section ul li:hover {
+            background-color: #f8f9fa;
+            cursor: pointer;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333; /* Footer background color */
+            color: #fff; /* Footer text color */
+            padding: 20px 0; /* Add padding */
+            width: 100%; /* Full width */
+            
+            bottom: 0; /* Stick to the bottom */
+            left: 0; /* Align to left */
+        }
+
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        #mainHeader {
+            animation: fadeInScale 1s ease forwards;
+        }
+    </style>
+</head>
+<body>
+  <header id="mainHeader">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/img/IMG_Khadim_Logo-removebg-preview.png" alt="" style="width: 30%; height: 20%;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="OurServices.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="satisfaction.html">Our Satisfaction</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="Order.html">Order</a></li>
+            <li class="nav-item"><a class="nav-link" href="FAQS.html">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <main>
+        <section id="about" class="container" id="about-content" style="margin-top:10%;background-image: url(/assets/img/background1w3.avif); color: #fff;">
+            <h2 style="color: blue;">About Us</h2>
+            <p>Welcome to Khadim, your one-stop solution for all home services. We are dedicated to providing top-notch plumbing, electrician, carpentry, and other home repair services to our customers.</p>
+            <p>At Khadim, we understand the importance of a well-maintained home, and our team of skilled professionals is committed to delivering high-quality services that exceed your expectations.</p>
+            <p>With years of experience in the industry, we have built a reputation for reliability, efficiency, and customer satisfaction. Whether it's a minor repair or a major renovation project, you can trust Khadim to get the job done right.</p>
+            <p>Thank you for choosing Khadim for all your home service needs. We look forward to serving you!</p>
+
+            <section id="mission-section"style="color: #000;">
+                <div class="container">
+                    <h3>Our Mission</h3>
+                    <p>At Khadim, our mission is to provide exceptional home services that improve the quality of life for our customers. We strive to exceed customer expectations by delivering reliable, efficient, and cost-effective solutions for all their home repair and maintenance needs.</p>
+                </div>
+            </section>
+
+            <section id="mission-section"style="color: #000;">
+                <div class="container">
+                    <h3 style="color: blue;">Our Values</h3>
+                    <p>1. Customer Satisfaction: We prioritize customer satisfaction above all else and work tirelessly to meet and exceed our customers' expectations.</p>
+                    <p>2. Integrity: We conduct our business with honesty, transparency, and integrity, earning the trust and respect of our customers and employees.</p>
+                    <p>3. Excellence: We are% committed to delivering excellence in everything we do, from the quality of our services to the professionalism of our team.</p>
+                    <p>4. Innovation: We embrace innovation and continuously strive to improve our processes, technologies, and services to better serve our customers.</p>
+                </div>
+            </section>
+
+            <section  id="mission-section"style="color: #000; margin-bottom: 4%; ">
+                <div class="container">
+                    <h3 style="color: blue;">Our Team</h3>
+                    <p>Meet the dedicated team behind Khadim:</p>
+                    <ul style="margin-left: 2%;">
+                        <li>nasrullah memon - Founder & CEO</li>
+                        <li>sana  - Chief Operating Officer</li>
+                        <li>ali - Chief Financial Officer</li>
+                        <li>aysha - Head of Customer Relations</li>
+                        <!-- Add more team members as needed -->
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div id="footerContent" class="row">
+            <!-- Copyright Information -->
+            <div class="col-md-6">
+                <p>&copy; 2024 Khadim. All rights reserved.</p>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="col-md-6 text-right">
+                <!-- Facebook Logo -->
+                <a href="https://www.facebook.com/khadim" target="_blank"><img src="assets/img/facebook_logo-removebg-preview.png" alt="Facebook" style="width: 30px; height: 30px;"></a>
+                <!-- Twitter Logo -->
+                <a href="https://twitter.com/khadim" target="_blank"><img src="assets/img/twitter_logo-removebg-preview.png" alt="Twitter" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+                <!-- Instagram Logo -->
+                <a href="https://www.instagram.com/khadim" target="_blank"><img src="assets/img/instagram_logo-removebg-preview.png" alt="Instagram" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+    <!-- Bootstrap JS and dependencies -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script to trigger the animation when the About Us section is in view -->
+   
+</body>
+</html>

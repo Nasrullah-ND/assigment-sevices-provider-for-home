@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Satisfaction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-J9ojHAdA6BUW+uVAV65p8C7oUjldzDetHHLeql5zW50GJVkEeLD1gs2pA3Zk8UvzH5cAdGgjp+2tTTrJxwFfgQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+     #satisfaction {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+            background-image: url(/assets/img/baclground.jpeg);
+        }
+        #satisfaction h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        #satisfaction .satisfaction-item {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        #satisfaction .satisfaction-item:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        #satisfaction .satisfaction-item img {
+            display: block;
+            margin: 0 auto 15px;
+        }
+        #satisfaction .satisfaction-item h3 {
+            color: #007bff;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        #satisfaction .satisfaction-item p {
+            color: #555;
+        }
+        footer.footer {
+            margin-top: auto;}
+              /* CSS for feedback reviews */
+        .feedback-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .feedback-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animation for feedback item */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .feedback-item {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body style="background-image: url(assets/img/background1w3.avif);">
+  <header id="mainHeader">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/img/IMG_Khadim_Logo-removebg-preview.png" alt="" style="width: 30%; height: 20%;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="OurServices.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link active" href="satisfaction.html">Our Satisfaction</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="Order.html">Order</a></li>
+            <li class="nav-item"><a class="nav-link" href="FAQS.html">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<main>
+    <section id="satisfaction" style="margin-top: 8%; ">
+        <div class="container">
+            <h2>Our Satisfaction</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="satisfaction-item">
+                        <img src="assets/img/Quality Service.jpeg" alt="Quality Service">
+                        <h3>Quality Service</h3>
+                        <p>We provide high-quality services to meet our customers' needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="satisfaction-item">
+                        <img src="assets/img/Customer Support.jpeg" alt="Customer Support">
+                        <h3>Customer Support</h3>
+                        <p>Our dedicated customer support team is available 24/7 to assist you.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="satisfaction-item">
+                        <img src="assets/img/Professional Staff.jpg" alt="Professional Staff">
+                        <h3>Professional Staff</h3>
+                        <p>Our team consists of experienced professionals who ensure  service delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="container mt-5" style="background-color: #363636; color: #ddd;">
+    <h2 style="text-align: center;text-decoration: underline;justify-content: space-around; margin-bottom: 5%;"> FEEDBACKS & REVIEWS</h2>
+    <div id="feedbackContainer" style="margin-bottom: 10%;"></div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div id="footerContent" class="row">
+            <!-- Copyright Information -->
+            <div class="col-md-6">
+                <p>&copy; 2024 Khadim. All rights reserved.</p>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="col-md-6 text-right">
+                <!-- Facebook Logo -->
+                <a href="https://www.facebook.com/khadim" target="_blank"><img src="assets/img/facebook_logo-removebg-preview.png" alt="Facebook" style="width: 30px; height: 30px;"></a>
+                <!-- Twitter Logo -->
+                <a href="https://twitter.com/khadim" target="_blank"><img src="assets/img/twitter_logo-removebg-preview.png" alt="Twitter" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+                <!-- Instagram Logo -->
+                <a href="https://www.instagram.com/khadim" target="_blank"><img src="assets/img/instagram_logo-removebg-preview.png" alt="Instagram" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Feedback data
+    const feedbackData = [
+        { name: "ahamd", review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at nisi sed felis volutpat fermentum." },
+        { name: "sana", review: "Sed feugiat, diam vitae pellentesque sodales, ligula nisl convallis leo, vel tincidunt quam lorem at nunc." },
+        { name: "alisha", review: "Nullam et eleifend eros, nec sollicitudin nulla. Curabitur fringilla, nulla ut lacinia bibendum, dui ex hendrerit quam, eget congue eros quam ac risus." },
+        { name: "asma", review: "Maecenas nec lectus est. Cras vulputate, ligula eget fermentum suscipit, justo metus suscipit risus, eget lacinia eros leo eu ex." },
+        { name: "aysha", review: "Fusce sit amet ipsum sit amet mauris vehicula malesuada eget non nunc. Praesent a libero nec lacus pharetra tempor." },
+        { name: "fatima", review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at nisi sed felis volutpat fermentum." },
+        { name: "nasrullah", review: "Sed feugiat, diam vitae pellentesque sodales, ligula nisl convallis leo, vel tincidunt quam lorem at nunc." },
+        { name: "anas", review: "Nullam et eleifend eros, nec sollicitudin nulla. Curabitur fringilla, nulla ut lacinia bibendum, dui ex hendrerit quam, eget congue eros quam ac risus." },
+        { name: "moiz", review: "Maecenas nec lectus est. Cras vulputate, ligula eget fermentum suscipit, justo metus suscipit risus, eget lacinia eros leo eu ex." },
+        { name: "ali", review: "Fusce sit amet ipsum sit amet mauris vehicula malesuada eget non nunc. Praesent a libero nec lacus pharetra tempor." },
+        // Add more reviews as needed...
+    ];
+
+    // Function to render feedbacks
+    function renderFeedbacks() {
+        const feedbackContainer = document.getElementById("feedbackContainer");
+        feedbackData.forEach(item => {
+            const feedbackItem = document.createElement("div");
+            feedbackItem.classList.add("feedback-item");
+            feedbackItem.innerHTML = `
+                <h4>${item.name}</h4>
+                <p>${item.review}</p>
+            `;
+            feedbackContainer.appendChild(feedbackItem);
+        });
+    }
+
+    // Call the function to render feedbacks
+    renderFeedbacks();
+</script>
+
+</body>
+</html>

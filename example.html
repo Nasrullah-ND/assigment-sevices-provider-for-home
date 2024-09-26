@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Satisfaction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* CSS for feedback reviews */
+        .feedback-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .feedback-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animation for feedback item */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .feedback-item {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+<header id="mainHeader">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/img/IMG_Khadim_Logo-removebg-preview.png" alt="" style="width: 30%; height: 20%;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Our Satisfaction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Order.html">Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FAQS.html">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container mt-5">
+    <h2>Our Satisfaction</h2>
+    <div id="feedbackContainer"></div>
+</div>
+
+<footer>
+    <div class="container">
+        <div id="footerContent" class="row">
+            <div class="col-md-6">
+                <p>&copy; 2024 Khadim. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-right">
+                <a href="https://www.facebook.com/khadim" target="_blank"><img src="assets/img/facebook_logo-removebg-preview.png" alt="Facebook" style="width: 30px; height: 30px;"></a>
+                <a href="https://twitter.com/khadim" target="_blank"><img src="assets/img/twitter_logo-removebg-preview.png" alt="Twitter" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+                <a href="https://www.instagram.com/khadim" target="_blank"><img src="assets/img/instagram_logo-removebg-preview.png" alt="Instagram" style="width: 30px; height: 30px; margin-left: 10px;"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Feedback data
+    const feedbackData = [
+        { name: "John Doe", review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at nisi sed felis volutpat fermentum." },
+        { name: "Jane Smith", review: "Sed feugiat, diam vitae pellentesque sodales, ligula nisl convallis leo, vel tincidunt quam lorem at nunc." },
+        // Add more reviews here...
+        // Example:
+        { name: "Michael Johnson", review: "Nullam et eleifend eros, nec sollicitudin nulla. Curabitur fringilla, nulla ut lacinia bibendum, dui ex hendrerit quam, eget congue eros quam ac risus." },
+        { name: "Emily Davis", review: "Maecenas nec lectus est. Cras vulputate, ligula eget fermentum suscipit, justo metus suscipit risus, eget lacinia eros leo eu ex." },
+        { name: "Christopher Wilson", review: "Fusce sit amet ipsum sit amet mauris vehicula malesuada eget non nunc. Praesent a libero nec lacus pharetra tempor." },
+        // Add more reviews as needed...
+    ];
+
+    // Function to render feedbacks
+    function renderFeedbacks() {
+        const feedbackContainer = document.getElementById("feedbackContainer");
+        feedbackData.forEach(item => {
+            const feedbackItem = document.createElement("div");
+            feedbackItem.classList.add("feedback-item");
+            feedbackItem.innerHTML = `
+                <h4>${item.name}</h4>
+                <p>${item.review}</p>
+            `;
+            feedbackContainer.appendChild(feedbackItem);
+        });
+    }
+
+    // Call the function to render feedbacks
+    renderFeedbacks();
+</script>
+
+</body>
+</html>
